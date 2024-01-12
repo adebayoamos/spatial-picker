@@ -5,14 +5,14 @@
  */
 
 import summary from 'rollup-plugin-summary';
-import {terser} from 'rollup-plugin-terser';
+import { terser } from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'my-element.js',
+  input: 'spatial-picker.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'spatial-picker.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
@@ -21,7 +21,7 @@ export default {
     }
   },
   plugins: [
-    replace({'Reflect.decorate': 'undefined'}),
+    replace({ 'Reflect.decorate': 'undefined' }),
     resolve(),
     /**
      * This minification setup serves the static site generation.

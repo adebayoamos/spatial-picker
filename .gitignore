@@ -3,9 +3,9 @@
 /test/
 custom-elements.json
 # top level source
-my-element.js
-my-element.js.map
-my-element.d.ts
-my-element.d.ts.map
+spatial-picker.js
+spatial-picker.js.map
+spatial-picker.d.ts
+spatial-picker.d.ts.map
 # only generated for size check
-my-element.bundled.js
+spatial-picker.bundled.js
